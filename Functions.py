@@ -205,6 +205,7 @@ bakery("black forest")'''
     print("price is %.2f" %price)
     print("quantity is %d kg/g" %qty)
 bakery(3)'''
+
 # * arguments(* is used to unpack the elements)
 # Unpacking a List
 '''a=[2,3,4,5,6,7]
@@ -257,17 +258,88 @@ print(a)
 print(*b)
 print(c)'''
 
+#variable length arguments
+'''def check(*a):
+    print(a)
+    print(type(a))
+check()
+check(2,3,4,5,6,7,8)
+b=[4,5,6,7,8]
+check(*b)
+c={5,6,7,8,9,10}
+check(*c)
+d={"name":"pooja","age":28,"place":"vja"}
+check(*d)'''
+
+'''def check1(*a):
+    d=1#creating a variable
+    print(a)
+    print(type(a))
+    for i in a:
+        if type(i) in (int,float):
+            d=d+i
+            print(d)
+check1()
+check1(2,3,4,5,6)
+check1(1,3,4,5,2.3,4.3)
+check1(4,3,6,2,3.4,2.3,"python",4+9j,True,False)'''
+
+#**(kwargs)-keyword variable length arguments
+'''def check2(**a):
+    print(a)
+    print(type(a))
+check2()
+details={"names":["sweety","viji","vani"],
+         "marks":[60,70,80],
+         "status":["p","a","p"]}
+check2(**details)'''
+
+'''def check2(**a):
+    print(a)
+    print(type(a))
+    for i in a:
+        print(i)
+    for i in a.keys():
+        print(i)
+    for i in a:
+        print(a[i])
+    for i in a.values():
+        print(i)
+    for i in a:
+        print(i,a[i])
+    for i in a.items():
+        print(i)
+check2()
+details={"names":["sweety","viji","vani"],
+         "marks":[60,70,80],
+         "status":["p","a","p"]}
+check2(**details)'''
+
+# Both * and ** usage
+'''def final(*a,**b):
+    d=2
+    print(a)
+    print(b)
+    print(type(a))
+    print(type(b))
+    for i in a:
+        d=d+i
+        print(d)
+    for i,j in b.items():
+        print("key is",i)
+        print("value is",j)
+final()
+data=(2,3,4,5,6,3.5,7.8)
+final(*data)
+details={"year":[2026,2027,2028],
+         "month":["june","july","aug"]}
+final(**details)
+final(*data,**details)'''
 
 
-
-
-
-
-
-
-
-
-
+            
+        
+        
 
 
 
