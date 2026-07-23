@@ -121,6 +121,92 @@ for i in n:
         print("Obesity")'''
 
 
+#annonymous functions(nameless function)
+#write a function to calculate 2*x+5 where x=5
+
+'''def check():
+    x=int(input("Enter value:"))
+    print(2*x+5)
+check()'''
+
+'''def check(x):
+    print(2*x+5)
+check(5)'''
+
+#syntax
+#a=lambda arg:expr
+'''a=lambda x:2*x+5
+print(a(5))'''
+
+'''a=int(input())
+b=lambda x:2*x+5
+print(b(a))'''
+
+#tasks
+'''a=lambda x,y:x*y
+print(a(5,6))'''
+
+'''x=int(input())
+y=int(input())
+z=lambda x,y:x*y
+print(z(x,y))'''
+
+#a=codegnan
+#CODEGNAN
+'''a=input()
+b=lambda a:a.upper()
+print(b(a))'''
+
+'''a= lambda a:a.upper()
+print(a("codegnan"))'''
+
+#a="python course"
+#Python Course
+'''a=input()
+b=lambda a:a.title()
+print(b(a))'''
+
+#firstname+lastname=fullname
+'''fname=input("Enter first name:")
+lname=input("Enter last name:")
+fullname=lambda fname,lname:(fname+" "+lname).title()
+print(fullname(fname,lname))'''
+
+'''fname,lname=[x for x in input("Enter the fname and lname:").split(" ")]
+fullname=lambda fname,lname:(fname+" "+lname).title()
+print(fullname(fname,lname))'''
+
+#filter()
+#a=[10,30,50,100,127,39,45,67,200]
+'''if a%2==0:
+    print(a)'''
+    
+'''for i in a:
+    if i%2==0:
+        print(i)'''
+
+'''a=[10,30,50,100,127,39,45,67,200]
+b=list(filter(lambda i:i%2==0,a))
+print(b)'''
+
+#[],(),{}
+'''a=[]
+print(type(a))
+
+b=()
+print(type(b))
+
+c={}
+print(type(c))
+
+d=set()
+print(type(d))'''
+
+'''a=[[],(),{}," ",None,5,6.7,"python",4+9j,True,False]
+b=list(filter(None,a))
+print(b)'''
+
+
 
 
 
