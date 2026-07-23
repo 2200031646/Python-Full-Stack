@@ -106,18 +106,19 @@ for i in n:
     print(i,"-",ord(i))'''
 
 #BMI
-'''w = float(input("Enter the weight:"))
-h=float(input("Enter the height:"))
-bmi = w / (h * h)
-print("BMI =", bmi)
-if bmi <= 18.5:
-    print("Under Weight")
-elif bmi > 18.5 and bmi <= 24.9:
-    print("Healthy Weight")
-elif bmi > 24.9 and bmi < 30:
-    print("Over Weight")
-else:
-    print("Obesity")'''
+'''while True:
+    w = float(input("Enter the weight(kg):"))
+    h=float(input("Enter the height(m):"))
+    bmi = w / (h * h)
+    print("BMI =", bmi)
+    if bmi <= 18.5:
+        print("Under Weight")
+    elif bmi > 18.5 and bmi <= 24.5:
+        print("Healthy Weight")
+    elif bmi > 24.5 and bmi <=29.5:
+        print("Over Weight")
+    elif bmi>30.5:
+        print("Obesity")'''
 
 
 
