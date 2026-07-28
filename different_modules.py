@@ -93,7 +93,7 @@ print(a)'''
 
 '''import time
 a=time.time()
-print(a)#epoch time
+print(a) #epoch time
 
 b=time.localtime(a)
 print(b)
@@ -102,7 +102,7 @@ print(f"Today date is {b.tm_mday}-{b.tm_mon}-{b.tm_year}")
 print(f"Today time is {b.tm_hour}:{b.tm_min}:{b.tm_sec}")
 print(f"Today day is {b.tm_mday}-{b.tm_yday}-{b.tm_isdst}")'''
 
-#task
+#Random Number Task
 '''import random
 import time
 for i in range(10):
@@ -115,25 +115,26 @@ for i in range(10):
 #run_time error -> during execution time it will happen
 #logical error ->error in logic(it can't be visible)
 
-#syntax error
+#Syntax error
 '''for i in range(10)
 print(i)'''
 
-#run_time error
+#Run_time Error
 '''a=int(input())
 b=int(input())
 print(a//b)'''#10/0->zero division error
 
-#logical error
+#Logical Error 
 '''a=10
 b=20
 print(a-b)'''
 
+#correct logic
 '''a=10
 b=20
 if a<b:
     print("less")'''
-
+#incorrect logic
 '''a=10
 b=20
 if a>b:
