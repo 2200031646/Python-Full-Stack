@@ -143,6 +143,110 @@ y=B(5)
 #y=5
 print(x+y)'''
 
+#method overloading
+'''class new():
+    def sum(self,a=None,b=None,c=None):
+        if a!=None and b!=None and c!=None:
+            print("The sum is",a+b+c)
+        elif a!=None and b!=None:
+            print("The product is",a*b)
+        else:
+            print("The program ends......")
+x=new()
+x.sum()
+x.sum(2,4,5)
+x.sum(8,4)'''
+
+'''class new():
+    def sum(self,a=3,b=9,c=2):
+        if a!=9 and b!=9 and c!=5:
+            print("The sum is",a+b+c)
+        elif a!=1 and b!=8:
+            print("The product is",a*b)
+        else:
+            print("The program ends......")
+x=new()
+x.sum()'''
+#method overriding
+'''class Animal():
+    def speak(self):
+        print("Animals can make sounds")
+class Dog():
+    def speak(self):
+        print("Dog can barks")
+a=Animal()
+b=Dog()
+a.speak()
+b.speak()'''
+
+'''class car():
+    def vehicle(self):
+        print("Maruti")
+class bike():
+    def vehicle(self):
+        print("Honda")  
+a=car()
+b=bike()
+a.vehicle()
+b.vehicle()'''
+
+#inheritance()
+#single-inheritance()
+'''class RBI():#parent class
+    cash=100000
+    def available_cash(cls):
+        #print("available_cash is",cls.cash)
+        print("available_cash is",RBI.cash)
+class SBI(RBI):#child class-1
+    pass
+class HDFC(RBI):#child class-2
+    cash=50000
+    def new_cash(cls):
+        #print("new_cash is",cls.cash+cls.cash)
+        print("new_cash is",cls.cash+RBI.cash)
+a=HDFC()
+a.available_cash()
+a.new_cash()'''
+#multiple-inheritance()
+#task
+'''class Father():#parent class-1
+    weight=80
+    def father_weight(cls):
+        print(f"Weigth is {cls.weight} kgs")
+class Mother():#parent class-1
+    height=60
+    def mother_height(cls):
+        print(f"Height is {cls.height} inches")
+class Kid(Father,Mother):#child class
+    dob="27-04-2005"
+    def kid_dob(cls):
+        print("date of birth is",cls.dob)
+a=Kid()
+a.father_weight()
+a.mother_height()
+a.kid_dob()'''
+
+'''class father():
+    def weight(self):
+        print("60kgs")
+class mother():
+    def height(self):
+        print("5.5 inches")
+class kid(mother,father):
+    def dob(self):
+        print("just born...")
+c=kid()
+c.weight()
+c.height()
+c.dob()'''
+
+
+
+
+
+        
+    
+
 
 
 
