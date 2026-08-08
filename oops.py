@@ -213,7 +213,7 @@ a.new_cash()'''
     weight=80
     def father_weight(cls):
         print(f"Weigth is {cls.weight} kgs")
-class Mother():#parent class-1
+class Mother():#parent class-2
     height=60
     def mother_height(cls):
         print(f"Height is {cls.height} inches")
@@ -240,32 +240,70 @@ c.weight()
 c.height()
 c.dob()'''
 
+#Multi-Level Inheritance
+'''class grandparent():
+    def land(self):
+        print("2 acres")
+class parent(grandparent):
+    def house(self):
+        print("100 sqft")
+class child(parent):
+    def car(self):
+        print("Breeza")
+a=child()
+a.land()
+a.house()
+a.car()'''
 
 
+#Hierarchical Inheritance
+'''class Employee(): #parent class
+    def company(self):
+        print("Codegnan it solutions")
+class Trainer(Employee): #child class-1
+    def teaching(self):
+        print("Trainer teach the code")
+class Student(Employee): #child class-2
+    def learning(self):
+        print("Prepare for exams")
+a=Trainer()
+a.company()
+a.teaching()
+b=Student()
+b.company()
+b.learning()'''
 
+#Hybrid Inheritance
+'''class Person():
+    def details(self):
+        print("Name:Yasaswini")
+class Trainer(Person):
+    def teach(self):
+        print("Training the students")
+class Student(Person):
+    def study(self):
+        print("studying for exams")
+class Program_Manager(Trainer,Student):
+    def management(self):
+        print("manages both trainer and student")
+a=Program_Manager()
+a.teach()
+a.study()
+a.management()'''
 
-        
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#super()
+'''class parent():
+    def __init__(self,name):
+        self.name=name
+        print("parent constructor")
+class child(parent):
+    def __init__(self,name,age):
+        self.age=age
+        super().__init__(name)
+        print("child constructor")
+a=child("yasaswini",21)
+print(a.name)
+print(a.age)'''
 
 
 
